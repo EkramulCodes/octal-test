@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game">
+        <h1>Number Guessing Game</h1>
+        <h2 class="heading">Game Setup</h2>
+        
+        <div id="setup-area">
+            <p style="margin-bottom: 10px; color: #636e72;">How many guessers? (2-5)</p>
+            <input class="player-count" type="number" value="2" min="2" max="5">
+            <button class="start-setup-btn">Start Game</button>
+        </div>
+
+        <div id="player1-area" class="hidden">
+            <input class="player-1-num" type="password" placeholder="Set secret number (1-10)">
+            <p class="player-1-err err-text"></p>
+            <button class="player-1-btn">Lock Number</button>
+        </div>
+
+        <div id="guess-area" class="hidden">
+            <div class="number-pad">
+                </div>
+            <p class="guess-err err-text"></p>
+        </div>
+
+        <div id="results-summary" class="hidden" style="width: 100%;"></div>
+        <button class="reset-btn hidden">New Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
