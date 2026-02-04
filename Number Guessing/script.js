@@ -67,7 +67,7 @@ function handleGuess(num) {
         guessErr.innerHTML = "Out of chances!";
         finishTurn();
     } else {
-        guessErr.innerHTML = num > secretNumber ? `${num} is too High! ↓` : `${num} is too Low! ↑`;
+        guessErr.innerHTML = num > secretNumber ? `${num} is too High! â` : `${num} is too Low! â`;
         heading.innerHTML = `Player ${currentPlayerIndex} - <span>${guessesLeft}</span> chances`;
     }
 }
